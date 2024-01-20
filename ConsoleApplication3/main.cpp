@@ -31,32 +31,32 @@ int main() {
     {
         LogDuration input;
         if (testStack()) {
-            cout << "Юнит-тесты пройдены успешно!" << endl;
+            cout << "Р®РЅРёС‚-С‚РµСЃС‚С‹ РїСЂРѕР№РґРµРЅС‹ СѓСЃРїРµС€РЅРѕ!" << endl;
         }
         else {
-            cerr << "Юнит-тесты не пройдены!" << endl;
+            cerr << "Р®РЅРёС‚-С‚РµСЃС‚С‹ РЅРµ РїСЂРѕР№РґРµРЅС‹!" << endl;
         }
 
         try {
-            // Использование шаблонного класса Stack с типами int, double, string
+            // РСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ С€Р°Р±Р»РѕРЅРЅРѕРіРѕ РєР»Р°СЃСЃР° Stack СЃ С‚РёРїР°РјРё int, double, string
             Stack<int> intStack;
             intStack.push(1);
             intStack.push(2);
-            cout << "Извлечено из intStack: " << intStack.pop() << endl;
+            cout << "РР·РІР»РµС‡РµРЅРѕ РёР· intStack: " << intStack.pop() << endl;
 
             Stack<double> doubleStack;
             doubleStack.push(3.14);
             doubleStack.push(2.71);
-            cout << "Извлечено из doubleStack: " << doubleStack.pop() << endl;
+            cout << "РР·РІР»РµС‡РµРЅРѕ РёР· doubleStack: " << doubleStack.pop() << endl;
 
             Stack<string> stringStack;
-            //stringStack.push("Привет");
-            //stringStack.push("Мир");
-            cout << "Извлечено из stringStack: " << stringStack.pop() << endl;
+            //stringStack.push("РџСЂРёРІРµС‚");
+            //stringStack.push("РњРёСЂ");
+            cout << "РР·РІР»РµС‡РµРЅРѕ РёР· stringStack: " << stringStack.pop() << endl;
 
         }
         catch (const exception& e) {
-            cerr << "Исключение: " << e.what() << endl;
+            cerr << "РСЃРєР»СЋС‡РµРЅРёРµ: " << e.what() << endl;
         }
 
         return 0;
