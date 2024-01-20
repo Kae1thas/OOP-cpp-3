@@ -3,23 +3,23 @@
 #include "stack.cpp"
 
 bool testStack() {
-    // Тестирование операций с int
+    // РўРµСЃС‚РёСЂРѕРІР°РЅРёРµ РѕРїРµСЂР°С†РёР№ СЃ int
     Stack<int> intStack;
     intStack.push(1);
     intStack.push(2);
     assert(intStack.pop() == 2);
 
-    // Тестирование операций с double
+    // РўРµСЃС‚РёСЂРѕРІР°РЅРёРµ РѕРїРµСЂР°С†РёР№ СЃ double
     Stack<double> doubleStack;
     doubleStack.push(3.14);
     doubleStack.push(2.71);
     assert(doubleStack.pop() == 2.71);
 
-    // Тестирование операций со строками
+    // РўРµСЃС‚РёСЂРѕРІР°РЅРёРµ РѕРїРµСЂР°С†РёР№ СЃРѕ СЃС‚СЂРѕРєР°РјРё
     Stack<string> stringStack;
-    stringStack.push("Привет");
-    stringStack.push("Мир");
-    assert(stringStack.pop() == "Мир");
+    stringStack.push("РџСЂРёРІРµС‚");
+    stringStack.push("РњРёСЂ");
+    assert(stringStack.pop() == "РњРёСЂ");
 
     return true;
 }
