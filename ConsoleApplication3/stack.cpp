@@ -8,22 +8,22 @@ class Stack {
 private:
     vector<Temp> data;
 public:
-    // Добавление элемента в стек
+    // Р”РѕР±Р°РІР»РµРЅРёРµ СЌР»РµРјРµРЅС‚Р° РІ СЃС‚РµРє
     void push(const Temp& value) {
         data.push_back(value);
     }
 
-    // Извлечение элемента из стека 
+    // РР·РІР»РµС‡РµРЅРёРµ СЌР»РµРјРµРЅС‚Р° РёР· СЃС‚РµРєР° 
     Temp pop() {
         if (empty()) {
-            throw std::out_of_range("Стек пуст");
+            throw std::out_of_range("РЎС‚РµРє РїСѓСЃС‚");
         }
         Temp topElement = data.back();
         data.pop_back();
         return topElement;
     }
 
-    // Проверка на пустоту
+    // РџСЂРѕРІРµСЂРєР° РЅР° РїСѓСЃС‚РѕС‚Сѓ
     bool empty() const {
         return data.empty();
     }
